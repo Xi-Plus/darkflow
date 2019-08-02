@@ -131,6 +131,7 @@ def predict(self):
         start = time.time()
         out = self.sess.run(self.out, feed_dict)
         stop = time.time(); last = stop - start
+        last = max(last, 1) # Prevent ZeroDivisionError
         self.say('Total time = {}s / {} inps = {} ips'.format(
             last, len(inp_feed), len(inp_feed) / last))
 
