@@ -44,6 +44,7 @@ ckpt/*
 
 #pytest cache
 .cache/
+.coverage
 
 # Editor
 .vscode/
