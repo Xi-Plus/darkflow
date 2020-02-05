@@ -1,9 +1,12 @@
-
 # Python bytecode
 *.pyc
 
+# config
+cfg/*.cfg
+
 # Weight files
 bin/
+weights/
 
 # Sample image data
 sample_img/*.jpg
